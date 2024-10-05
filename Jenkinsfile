@@ -30,7 +30,7 @@ pipeline {
             }
             
             steps {
-                sh "sam deploy -t lambda-app/template.yaml --s3-bucket --no-confirm-changeset --no-fail-on-empty-changeset"
+                sh "sam deploy -t lambda-app/template.yaml --no-confirm-changeset --no-fail-on-empty-changeset"
 
             }
         }
