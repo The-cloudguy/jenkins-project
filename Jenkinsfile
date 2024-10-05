@@ -23,6 +23,11 @@ pipeline {
             }
         }
         stage('Deploy') {
+
+            environment {
+                AWS_ACCESS_KEY_ID = credentials('aws-access-key')
+                AWS_SECRET_ACCESS_KEY = credentials('aws-secret-key')
+            }
             
             steps {
                 sh "sam deploy -t lambda-app/template.yaml --no-confirm-changeset --no-fail-on-empty-changeset"
