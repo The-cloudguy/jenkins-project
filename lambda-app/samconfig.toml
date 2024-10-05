@@ -15,7 +15,6 @@ lint = true
 [default.deploy.parameters]
 capabilities = "CAPABILITY_IAM"
 confirm_changeset = true
-resolve_s3 = true
 s3_bucket = "sam-app-lambda-bucket-123454321"
 region = "us-west-2"
 
