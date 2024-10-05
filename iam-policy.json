@@ -24,7 +24,7 @@
                 "cloudformation:GetTemplateSummary"
             ],
             "Resource": [
-                "arn:aws:cloudformation:*:<YOUR_ACCOUNT_ID>:stack/*"
+                "arn:aws:cloudformation:*:135808937906:stack/*"
             ]
         },
         {
@@ -56,7 +56,7 @@
                 "lambda:UpdateFunctionConfiguration"
             ],
             "Resource": [
-                "arn:aws:lambda:*:<YOUR_ACCOUNT_ID>:function:*"
+                "arn:aws:lambda:*:135808937906:function:*"
             ]
         },
         {
@@ -72,7 +72,7 @@
                 "iam:TagRole"
             ],
             "Resource": [
-                "arn:aws:iam::<YOUR_ACCOUNT_ID>:role/*"
+                "arn:aws:iam::135808937906:role/*"
             ]
         },
         {
